@@ -39,7 +39,7 @@
             <asp:Label ID="CurrentRate" runat="server">N/A</asp:Label>
                 , New Rate:
              <asp:TextBox CssClass="box" ID="Rate" runat="server" Width="40px"></asp:TextBox>
-                <asp:Button CssClass="button" ID="ModifyButton" runat="server" OnClick="ModifyButton_Click" Text="Change" />
+                <asp:Button CssClass="button" ID="ModifyButton" runat="server" OnClick="ModifyButton_Click" Text="Update" />
             </div>
 
             <br />
