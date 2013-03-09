@@ -74,25 +74,24 @@ public partial class _Default : System.Web.UI.Page
         }
 
         //try to convert new rate, and catch an exception
-        try 
+        try
         {
             if (Decimal.Parse(NewRate.Text) <= 0)
             {
                 throw new FormatException();
             }
         }
-        catch(FormatException)
+        catch (FormatException)
         {
             Output.Text = "Error: Invalid rate!";
             Output.ForeColor = System.Drawing.ColorTranslator.FromHtml("#FF0000");
-            //clear the fields
-            NewCurrency.Text = "";
+            //clear the field
             NewRate.Text = "";
             return;
         }
 
         //if the currency already exists, do not add it
-        if(CurrencyBox.Items.FindByText(NewCurrency.Text)!=null)
+        if (CurrencyBox.Items.FindByText(NewCurrency.Text) != null)
         {
             Output.Text = "Error: Currency already exists!";
             Output.ForeColor = System.Drawing.ColorTranslator.FromHtml("#FF0000");
@@ -107,7 +106,7 @@ public partial class _Default : System.Web.UI.Page
 
         Output.Text = "Currency successfully added.";
         Output.ForeColor = System.Drawing.ColorTranslator.FromHtml("#008000");
-        
+
         //clear the fields
         NewCurrency.Text = "";
         NewRate.Text = "";
