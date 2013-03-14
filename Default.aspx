@@ -69,7 +69,7 @@
             <p style="text-align: center">&copy; Baris Tevfik</p>
         </div>
 
-        <asp:SqlDataSource ID="Sqldatasource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT Id, Country, Rate FROM [Table] ORDER BY Country" DeleteCommand="DELETE FROM [Table] WHERE (Country = @countryName)" InsertCommand="INSERT INTO [Table] (Country, Rate) VALUES (@newCurrency, @newRate)" UpdateCommand="UPDATE [Table] SET Rate = @newRate WHERE (Country = @country)">
+        <asp:SqlDataSource ID="Sqldatasource1" runat="server" ConnectionString="<%$ ConnectionStrings:CurrencyConverterDB %>" SelectCommand="SELECT Id, Country, Rate FROM [Table] ORDER BY Country" DeleteCommand="DELETE FROM [Table] WHERE (Country = @countryName)" InsertCommand="INSERT INTO [Table] (Country, Rate) VALUES (@newCurrency, @newRate)" UpdateCommand="UPDATE [Table] SET Rate = @newRate WHERE (Country = @country)">
             <DeleteParameters>
                 <asp:ControlParameter ControlID="CurrencyBox" Name="countryName" PropertyName="SelectedItem.Text" />
             </DeleteParameters>
