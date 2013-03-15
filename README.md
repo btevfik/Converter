@@ -1,8 +1,8 @@
 Converter
 =========
 
-A simple currency converter created in ASP.NET for EC512
+A simple currency converter created in ASP.NET for EC512.
 
-testing deployment at AppHarbor.com
+Testing deployment at AppHarbor.com
 
-http://currencyconverter-2.apphb.com/
+address: http://currencyconverter-2.apphb.com/
